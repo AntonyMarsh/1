@@ -1,0 +1,20 @@
+const int sensorPin1 = A0;
+const int sensorPin2 = A1;
+const int sensorPin3 = A2;
+
+void setup() {
+    Serial.begin(9600);
+}
+
+void loop() {
+    int value1 = analogRead(sensorPin1);
+    int value2 = analogRead(sensorPin2);
+    int value3 = analogRead(sensorPin3);
+    Serial.print("Value 1: ");
+    Serial.println(value1);
+    Serial.print("Value 2: ");
+    Serial.println(value2);
+    Serial.print("Value 3: ");
+    Serial.println(value3);
+    delay(1000);
+}
